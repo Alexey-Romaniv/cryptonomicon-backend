@@ -14,5 +14,6 @@ mongoose
   .then(() => console.log("Database connects success"))
   .catch((e) => {
     console.log(e);
+      console.log(DB_HOST)
     process.exit(1);
   });
