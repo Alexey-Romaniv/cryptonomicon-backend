@@ -12,8 +12,6 @@ mongoose.set("strictQuery", true);
 mongoose
   .connect(DB_HOST)
   .then(() => console.log("Database connects success"))
-  .catch((e) => {
-    console.log(e);
-      console.log(DB_HOST)
+  .catch(() => {
     process.exit(1);
   });
